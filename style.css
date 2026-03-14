@@ -1,0 +1,779 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: cyan;
+  
+}
+
+.brands-page {
+           
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/models.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-page {
+            background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/garage-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-signup-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.small-btn {
+  padding: 6px 12px;
+  background: #00f7ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.small-btn:hover {
+  background: #0609d6;
+}
+
+.form-page {
+  background-image: url("images/loginbg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.form-page::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+}
+
+.form-box {
+  position: relative;
+  z-index: 1;
+  width: 95%;
+  max-width: 750px;
+  padding: 80px;
+  background: rgba(12, 12, 12, 0.12);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 25px;
+  border: 1px,solid rgba(255,255,255,0.3);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  text-align: center;
+  text-emphasis-color: black;
+}
+
+
+.form-box input {
+  width: 100%;
+  padding: 16px;
+  margin: 18px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(5, 5, 5, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.form-box input:focus {
+  border-color: #00c6ff;
+  outline: none;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 15px;
+  background: linear-gradient(90deg,#00f7ff,#00c6ff);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-btn:hover {
+  transform: scale(1.05);
+}
+
+.switch a {
+  color: #00f7ff;
+  text-decoration: none;
+}
+
+        
+.model-page {
+    background: linear-gradient(
+        -45deg,
+        #020202,
+        #032b2b,
+        #001f24,
+        #042e35
+    );
+    background-size: 400% 400%;
+    animation: cyberBG 18s ease infinite;
+}
+
+
+.main-header,
+.main-footer {
+  background: black;
+  color: cyan;
+  text-align: center;
+  padding: 14px;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px cyan;
+}
+
+.main-footer {
+  font-size: 13px;
+}
+
+
+
+.boot-screen {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.system-box {
+  background: rgba(0, 255, 255, 0.05);
+  border: 2px solid cyan;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  
+}
+
+.big-box {
+  max-width: 750px;
+}
+
+
+.logo {
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 20px cyan;
+  margin-bottom: 20px;
+}
+
+
+.scan {
+  margin: 8px 0;
+  font-size: 14px;
+  
+}
+
+
+
+.fun-zone {
+  margin: 25px 0;
+  padding: 15px;
+  border: 1px dashed cyan;
+  border-radius: 12px;
+  background: rgba(0, 255, 255, 0.05);
+}
+
+.fun-zone p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #00ffffcc;
+  
+}
+
+
+
+.enter-btn,
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  border: 2px solid cyan;
+  color: cyan;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px cyan;
+}
+
+.enter-btn:hover,
+.back-btn:hover {
+  background: cyan;
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px cyan;
+}
+
+
+
+.brand-title {
+  font-size: 34px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px cyan;
+}
+
+.brand-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: auto;
+}
+
+.brand-list li {
+  margin: 10px 0;
+}
+
+.brand-list li a {
+  display: block;
+  padding: 12px 18px;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid cyan;
+  border-radius: 10px;
+  text-decoration: none;
+  color: cyan;
+  letter-spacing: 1px;
+  
+}
+
+.brand-list li a:hover {
+  background: cyan;
+  color: black;
+  
+}
+
+.model-page {
+  padding: 60px 20px;
+  background: radial-gradient(circle, #020202, #000);
+  min-height: 100vh;
+}
+
+
+
+.model-box {
+  margin: 40px auto;
+  width: 95%;
+  border: 2px solid cyan;
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(0,255,255,0.05);
+  
+}
+
+.model-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px cyan;
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  width: 90vw;
+  height: 90vh;
+  object-fit: contain;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.slider {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 5px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: 2px solid cyan;
+  scroll-snap-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.slider img:hover {
+  transform: scale(1.1);
+}
+/* ====================== */
+/* PREMIUM DASHBOARD */
+/* ====================== */
+
+.dashboard-page {
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.user-section {
+  font-size: 14px;
+}
+
+.logout-btn {
+  margin-left: 15px;
+  padding: 6px 16px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ddd;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  min-height: 85vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 240px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
+  padding: 35px 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 8px;
+  color: #ddd;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+/* Main Content */
+
+.dashboard-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.dashboard-content h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Stats Cards */
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.card ul {
+  padding-left: 20px;
+  color: #ddd;
+}
+/* ================= POLICY PAGE ================= */
+
+.policy-page {
+    background: linear-gradient(to bottom, #021316, #000);
+    min-height: 100vh;
+}
+
+.policy-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(0,255,255,0.05);
+    border: 1px solid cyan;
+    border-radius: 15px;
+}
+
+.policy-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px cyan;
+}
+
+.policy-container h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+
+.policy-container p {
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/* ================= PROFILE PAGE ================= */
+
+.profile-page {
+    background: linear-gradient(to bottom, #021316, #000);
+    min-height: 100vh;
+}
+
+.profile-container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.profile-container h1 {
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px cyan;
+}
+
+.profile-card {
+    background: rgba(0,255,255,0.05);
+    border: 1px solid cyan;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.profile-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-card p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.profile-card h3 {
+    margin-top: 20px;
+    color: #00ffff;
+}
+
+.profile-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.profile-list li {
+    margin: 5px 0;
+}
+
+.profile-actions a {
+    margin: 10px;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid red;
+    color: red;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* ===== DASHBOARD STRUCTURE ===== */
+
+.dashboard-page {
+  background: radial-gradient(circle at top left, #021316, #000);
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background: #000;
+  border-bottom: 1px solid cyan;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.user-section {
+  font-size: 14px;
+}
+
+.logout-btn {
+  margin-left: 15px;
+  padding: 8px 18px;
+  border: 1px solid red;
+  color: red;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+
+/* Layout */
+
+.dashboard-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 30px;
+  background: rgba(0,255,255,0.05);
+  border-right: 1px solid cyan;
+}
+
+.sidebar a {
+  display: block;
+  margin: 15px 0;
+  color: cyan;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-shadow: 0 0 8px cyan;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Welcome */
+
+.welcome-box {
+  margin-bottom: 40px;
+}
+
+.welcome-box h1 {
+  text-shadow: 0 0 10px cyan;
+}
+
+/* Stats */
+
+.stats-container {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 220px;
+  padding: 25px;
+  background: rgba(0,255,255,0.06);
+  border: 1px solid cyan;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* ===== Cyber Data Bars ===== */
+
+.data-section {
+  margin-bottom: 50px;
+}
+
+.data-section h2 {
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px cyan;
+}
+
+.meter {
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 100%;
+  height: 14px;
+  background: rgba(0,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, cyan, #00ff99);
+  border-radius: 10px;
+  animation: loadBar 2s ease forwards;
+  box-shadow: 0 0 15px cyan;
+}
+
+.fill1 { width: 75%; }
+.fill2 { width: 100%; }
+.fill3 { width: 40%; }
+
+@keyframes loadBar {
+  from { width: 0; }
+}
+
+/* Quick Actions */
+
+.quick-actions {
+  margin-bottom: 50px;
+}
+
+.quick-actions a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 22px;
+  border: 1px solid cyan;
+  border-radius: 25px;
+  text-decoration: none;
+  color: cyan;
+  transition: 0.3s;
+}
+
+.quick-actions a:hover {
+  background: cyan;
+  color: black;
+}
+
+/* Featured */
+
+.featured-car {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: rgba(0,255,255,0.05);
+  border: 1px solid cyan;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.featured-car img {
+  width: 280px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.featured-car img:hover {
+  transform: scale(1.05);
+}
+
+/* Activity */
+
+.activity-card {
+  background: rgba(0,255,255,0.05);
+  border: 1px solid cyan;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.activity-card ul {
+  padding-left: 20px;
+}
+
